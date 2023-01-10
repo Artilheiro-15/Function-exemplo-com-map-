@@ -17,7 +17,7 @@ public class App {
 
     List<String> names = list
       .stream()
-      .map(new UpperCaseName())
+      .map(Product::staticUpperCaseName)
       .collect(Collectors.toList());
 
     names.forEach(System.out::println);
